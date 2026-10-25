@@ -218,20 +218,40 @@
     },
     "CommonDataModel": {
       "Package": "CommonDataModel",
-      "Version": "1.0.1",
+      "Version": "1.1.0",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "DBI",
+      "Priority": null,
+      "Depends": [
+        "R (>= 4.1.0)"
+      ],
+      "Imports": [
         "DatabaseConnector",
         "SqlRender",
-        "dplyr",
-        "rJava",
-        "readr",
-        "rmarkdown",
-        "stringr"
+        "stringr",
+        "readr"
       ],
-      "Hash": "ca225f877fa347b35b84cad3494e9b52"
+      "LinkingTo": [
+        null
+      ],
+      "Suggests": [
+        "DBI",
+        "dplyr",
+        "knitr",
+        "rmarkdown",
+        "RSQLite",
+        "testthat (>= 3.0.0)",
+        "withr"
+      ],
+      "Enhances": [
+        null
+      ],
+      "License": "Apache License 2.0",
+      "License_is_FOSS": null,
+      "License_restricts_use": null,
+      "OS_type": null,
+      "NeedsCompilation": "no",
+      "Repository": "CRAN",
+      "Type": "source"
     },
     "CompQuadForm": {
       "Package": "CompQuadForm",
@@ -830,6 +850,53 @@
       ],
       "Hash": "c50704243df1632c8a96abf82147569d"
     },
+    "ShinyAppBuilder": {
+      "Package": "ShinyAppBuilder",
+      "Version": "3.2.0",
+      "Source": "GitHub",
+      "Type": "Package",
+      "Title": "Viewing OHDSI Results Via Shiny Modules",
+      "Date": "2024-11-22",
+      "Authors@R": "c( person(\"Jenna\", \"Reps\", email = \"jreps@its.jnj.com\", role = c(\"aut\", \"cre\")), person(\"Nathan\", \"Hall\", role = c(\"aut\")), person(\"Josh\", \"Ide\", role = c(\"aut\")), person(\"Jamie\", \"Gibert\", role = c(\"aut\")) )",
+      "Maintainer": "Jenna Reps <jreps@its.jnj.com>",
+      "Description": "Interactively view analysis results across different types of analyses.",
+      "License": "Apache License 2.0",
+      "URL": "https://ohdsi.github.io/ShinyAppBuilder, https://github.com/OHDSI/ShinyAppBuilder",
+      "BugReports": "https://github.com/OHDSI/ShinyAppBuilder/issues",
+      "VignetteBuilder": "knitr",
+      "Depends": [
+        "R (>= 3.3.0)"
+      ],
+      "Imports": [
+        "checkmate",
+        "DatabaseConnector",
+        "dplyr",
+        "OhdsiShinyModules (>= 3.0.0)",
+        "ParallelLogger (>= 2.0.0)",
+        "ResultModelManager (>= 0.4.0)",
+        "rlang",
+        "shiny",
+        "shinydashboard"
+      ],
+      "Suggests": [
+        "Eunomia",
+        "jsonlite",
+        "knitr",
+        "rmarkdown",
+        "testthat",
+        "markdown",
+        "remotes"
+      ],
+      "Remotes": "ohdsi/Eunomia, ohdsi/OhdsiShinyModules",
+      "RoxygenNote": "7.3.1",
+      "Encoding": "UTF-8",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "OHDSI",
+      "RemoteRepo": "ShinyAppBuilder",
+      "RemoteRef": "main",
+      "RemoteSha": "c809ec3339cf5740971855f06215e43d04a3dae4"
+    },
     "SparseM": {
       "Package": "SparseM",
       "Version": "1.84-2",
@@ -846,15 +913,37 @@
     },
     "SqlRender": {
       "Package": "SqlRender",
-      "Version": "1.19.6",
+      "Version": "1.19.7",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "checkmate",
-        "rJava",
-        "rlang"
+      "Priority": null,
+      "Depends": [
+        null
       ],
-      "Hash": "3c80a89d26e01b03ec10c65953777f10"
+      "Imports": [
+        "rJava",
+        "rlang",
+        "checkmate"
+      ],
+      "LinkingTo": [
+        null
+      ],
+      "Suggests": [
+        "testthat",
+        "knitr",
+        "rmarkdown",
+        "shiny",
+        "shinydashboard"
+      ],
+      "Enhances": [
+        null
+      ],
+      "License": "Apache License 2.0",
+      "License_is_FOSS": null,
+      "License_restricts_use": null,
+      "OS_type": null,
+      "NeedsCompilation": "no",
+      "Repository": "CRAN",
+      "Type": "source"
     },
     "Strategus": {
       "Package": "Strategus",
